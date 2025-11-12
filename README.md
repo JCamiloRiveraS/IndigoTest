@@ -1,2 +1,0 @@
-# IndigoTest
-ASP.NET CORE WEB API 

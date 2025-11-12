@@ -1,0 +1,6 @@
+@IndigoTest_HostAddress = http://localhost:5215
+
+GET {{IndigoTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
