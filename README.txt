@@ -1,6 +1,9 @@
-		
-		Presentación prueba técnica Índigo (IndigoTest)
+__________________________________________________________________________________________________
 
+		
+			Presentación prueba técnica Índigo (IndigoTest)
+
+__________________________________________________________________________________________________
 
 Plantilla: ASP.NET Core Web API - Plantilla para una API web RESTfull utilizando controladores ASP.NET Core o API mínimas
 
@@ -15,6 +18,8 @@ GET /api/productos	->Mostrar Productos en memoria
   		'https://localhost:7254/api/productos' \
 		  -H 'accept: */*'
 
+--------------------------------------------------------------------------------------------------
+
 POST /api/productos	->Agregar un producto (nombre, descripción y cantidad)
 
 	curl -X 'POST' \
@@ -28,11 +33,15 @@ POST /api/productos	->Agregar un producto (nombre, descripción y cantidad)
 	  "cantidadEnStock": 0
 	}'
 
+---------------------------------------------------------------------------------------------------
+
 GET /api/productos/{id}		->Buscar un producto por su id
 
 	curl -X 'GET' \
 	  'https://localhost:7254/api/productos/1' \
 	  -H 'accept: */*'
+
+---------------------------------------------------------------------------------------------------
 
 POST /api/stock/entrada/{productoId}		->Agregar cantidad de productos en stock	
 
@@ -42,6 +51,8 @@ POST /api/stock/entrada/{productoId}		->Agregar cantidad de productos en stock
 	  -H 'Content-Type: application/json' \
 	  -d '5'
 
+---------------------------------------------------------------------------------------------------
+
 POST /api/stock/salida/{productoId}		->Sacar o disminuir cantidad de productos en stock
 
 	curl -X 'POST' \
@@ -50,4 +61,7 @@ POST /api/stock/salida/{productoId}		->Sacar o disminuir cantidad de productos e
 	  -H 'Content-Type: application/json' \
  	  -d '3'
 
-o bien, para ejecutar se puede utilizar directamente en el navegador utilizando "Swagger" [7254] para una interfaz grafica del proyecto
+---------------------------------------------------------------------------------------------------
+
+o bien, para ejecutar se puede utilizar directamente en el navegador utilizando "Swagger" [7254] para una interfaz grafica del proyecto.
+
